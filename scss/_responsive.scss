@@ -1,0 +1,37 @@
+@include media-md {
+  .nav {
+    width: clamp(325px, 25%, 350px);
+  }
+}
+
+@include media-lg {
+  .row {
+    &--flex {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  .table {
+    &--md {
+      width: clamp(345px, 100%, 450px);
+    }
+  }
+}
+
+@include media-xlg {
+  .nav-btn {
+    visibility: hidden;
+  }
+
+  .nav {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+  }
+
+  .main {
+    width: 75%;
+    margin-left: auto;
+  }
+}

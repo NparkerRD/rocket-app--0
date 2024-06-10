@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+$cc-primary-46: #6940aa;
+$cc-primary: #845ec2;
+$cc-primary-66: #9f81cf;
+
+$cc-xdk: #170e25;
+$cc-dk: #2d1c4a;
+$cc-xlt: #f9f8fc;
+$cc-lt: #ddd3ee;
+
+$cc-success: #66ff66;
+$cc-warning: #e1e500;
+$cc-error: #ff3333;
+
+$cc-neutral: #cccccc;
+$cc-shadow: rgba(0, 0, 0, 0.25);
+
+$ff-main: "Inria Sans", sans-serif;
+
+$fw-bold: 700;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $ff-main;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+}
+
+.container {
+  border: 1px dashed blue;
+  width: 100%;
+
+  &--sm {
+    width: 25%;
+  }
+
+  &--md {
+    width: 50%;
+  }
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Media queries
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xlg {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}

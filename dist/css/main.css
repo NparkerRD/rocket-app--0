@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inria Sans", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+}
+
+.container {
+  border: 1px dashed blue;
+  width: 100%;
+}
+.container--sm {
+  width: 25%;
+}
+.container--md {
+  width: 50%;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.25);
+}
+.btn--primary {
+  background: #845ec2;
+  color: #ddd3ee;
+}
+.btn--cancel {
+  background: #cccccc;
+  color: #170e25;
+}
+
+.nav-btn {
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  right: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+}
+.nav-btn .burger {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 5px;
+  background: #170e25;
+  border-radius: 150px;
+}
+.nav-btn .burger::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 5px;
+  background-color: #170e25;
+  border-radius: 150px;
+}
+.nav-btn .burger::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 5px;
+  background-color: #170e25;
+  border-radius: 150px;
+}
+.nav-btn .burger.open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+.nav-btn .burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.nav-btn .burger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.table {
+  border-collapse: collapse;
+  margin-bottom: 55px;
+}
+.table caption {
+  background: #f9f8fc;
+  padding: 0.5rem;
+  border-radius: 7px 7px 0 0;
+  font-weight: 700;
+  font-size: 24px;
+}
+.table th {
+  background-color: #9f81cf;
+}
+.table th,
+.table td {
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.table tbody > tr:nth-of-type(odd) {
+  background-color: #f9f8fc;
+}
+.table tbody > tr:nth-of-type(even) {
+  background-color: #ddd3ee;
+}
+.table--full {
+  width: clamp(345px, 100%, 1000px);
+}
+.table--md {
+  width: clamp(345px, 100%, 800px);
+}
+
+.nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: clamp(325px, 90%, 425px);
+  height: 100vh;
+  background: #f9f8fc;
+  visibility: hidden;
+  opacity: 0;
+}
+.nav.open {
+  visibility: visible;
+  opacity: 1;
+}
+.nav__brand {
+  align-items: center;
+  padding: 20px 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.nav__logo {
+  width: 50px;
+  height: 75px;
+  background: black;
+  border-radius: 6px;
+  margin: 0 15px;
+}
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+.nav__item {
+  display: flex;
+  margin-bottom: 15px;
+  height: -moz-max-content;
+  height: max-content;
+  align-items: center;
+  font-size: 20px;
+}
+.nav__icon {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+.nav__submenu-container {
+  position: relative;
+}
+.nav__submenu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 35px;
+  margin-bottom: 10px;
+}
+.nav__subitem {
+  margin-bottom: 15px;
+}
+.nav__subitem .nav__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.nav__subitem .nav__link {
+  font-size: 16px;
+}
+.nav__buttons {
+  width: 50%;
+  margin: 150px auto 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 15px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    width: clamp(325px, 25%, 350px);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .row--flex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .table--md {
+    width: clamp(345px, 100%, 450px);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .nav-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+  }
+  .main {
+    width: 75%;
+    margin-left: auto;
+  }
+}/*# sourceMappingURL=main.css.map */

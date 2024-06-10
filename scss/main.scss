@@ -1,0 +1,30 @@
+@import "config";
+@import "buttons";
+@import "tables";
+@import "nav";
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: $cc-shadow;
+  visibility: hidden;
+  opacity: 0;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+main {
+  @include flexCol;
+  align-items: center;
+  padding: 100px 15px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@import "responsive";

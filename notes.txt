@@ -1,0 +1,36 @@
+The purpose of this app is to help keep track of issues and service calls that Rocket Daddy performs for its clients.
+
+App objectives:
+    * Track client issues that are submitted for assistance (issues that can be resolved without performing a service visit)
+    * Track client service calls performed by Rocket Daddy
+    * Assign an issue ID to each tracked issue
+    * Track the number of hours worked on each service call
+    * Track issue and service call notes
+    * Track issue and service call assigned technicians
+    * Track dates for issues and service calls (date of issue, and date issue was resolved)
+    * Add any invoicing information that needs to be handled with a service call (ie hours worked, any installation or equipment costs)
+    * Track upcoming site walkthroughs
+
+
+App building notes:
+    - This app will use the following languages:
+        * HTML/CSS
+        * JavaScript
+        * Node.js
+        * MongoDB (for storing issues/calls)
+
+    - This app will need to store the following:
+        * Technicians (stored in API OR just an array stored locally since no other properties will be needed)
+        * Clients (stored in API to track issues to clients)
+        * Issue
+
+    - Each issue will need the following properties:
+        * ID -> Str (client abbreviation + client issue number [Ex: JWB-001])
+        * Client -> Str (pulled from the client API/list)
+        * Issue title -> Str
+        * Issue description -> Str
+        * Issue date -> Date (allow date selection)
+        * Assigned technician -> Str (pulled from the technician API/list)
+        * Issue/technician notes -> Str
+        * Issue status -> Array["Pending", "In Progress", "Pending", "Canceled"] (should default to 'Pending' when issue is created)
+        * Issue resolved date -> Timestamp (default to current time/date; should be able to be adjusted)
