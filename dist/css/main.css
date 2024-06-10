@@ -132,7 +132,7 @@ a {
   background-color: #ddd3ee;
 }
 .table--full {
-  width: clamp(345px, 100%, 1000px);
+  width: clamp(345px, 100%, 900px);
 }
 .table--md {
   width: clamp(345px, 100%, 800px);
@@ -242,8 +242,18 @@ main {
     display: flex;
     justify-content: space-evenly;
   }
+  .table--full {
+    width: clamp(345px, 100%, 1050px);
+  }
   .table--md {
     width: clamp(345px, 100%, 450px);
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .row--flex {
+    justify-content: space-evenly;
   }
 }
 @media screen and (min-width: 1400px) {
