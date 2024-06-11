@@ -79,7 +79,50 @@
       </div>
     </nav>
 
-    <main class="main"></main>
+    <main class="main">
+      <div class="calc">
+        <div class="calc__tabs">
+          <div class="calc__tab calc__tab--active" id="tab--flying">Flying</div>
+          <div class="calc__tab" id="tab--driving">Driving</div>
+        </div>
+
+        <div class="calc__inputs">
+          <div class="calc__input-group">
+            <label for="input--days">Days</label>
+            <input type="number" name="days" class="input" id="input--days" />
+          </div>
+          <div class="calc__input-group">
+            <label for="input--nights">Nights</label>
+            <input
+              type="number"
+              name="nights"
+              class="input"
+              id="input--nights"
+            />
+          </div>
+          <div class="calc__input-group">
+            <label for="input--people">People</label>
+            <input
+              type="number"
+              name="people"
+              class="input"
+              id="input--people"
+            />
+          </div>
+          <div class="calc__input-group">
+            <label for="input--hours">Hours</label>
+            <input type="number" name="hours" class="input" id="input--hours" />
+          </div>
+          <div class="calc__input-group">
+            <label for="input--cases">Cases</label>
+            <input type="number" name="cases" class="input" id="input--cases" />
+          </div>
+        </div>
+        <div class="calc__total"></div>
+        <div class="calc__results"></div>
+        <div class="calc__buttons"></div>
+      </div>
+    </main>
 
     <!-- DEVELOPMENT ONLY - Open navigation menu -->
     <script>
