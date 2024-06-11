@@ -228,6 +228,7 @@ a {
   min-height: 625px;
   padding-bottom: 40px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 .calc__tabs {
   display: flex;
@@ -239,16 +240,19 @@ a {
 .calc__tab {
   padding: 15px 25px;
   cursor: pointer;
-  background: #cccccc;
+  background: #eee;
+}
+.calc__tab:first-child {
+  border-radius: 5px 0 0 0;
 }
 .calc__tab--active {
-  background: #845ec2;
+  background: #d9d9d9;
 }
 .calc__inputs {
   display: flex;
   width: 100%;
   align-items: center;
-  padding: 5px 0;
+  padding: 5px;
 }
 .calc__input-group {
   display: flex;
@@ -265,6 +269,47 @@ a {
   border: none;
   text-align: center;
   padding: 0 2px;
+}
+.calc__total {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+.calc__total hr {
+  width: 90%;
+  align-self: center;
+  justify-self: center;
+}
+.calc__total .calc__result-group {
+  padding: 15px 20px;
+}
+.calc__results {
+  display: flex;
+  flex-direction: column;
+}
+.calc__result-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 5px 20px;
+}
+.calc__result-group h1 {
+  font-size: 25px;
+}
+.calc__result {
+  background: #cccccc;
+  min-width: 80px;
+  height: 25px;
+}
+.calc__buttons {
+  width: 50%;
+  align-self: center;
+  margin-top: auto;
+}
+.calc__buttons .btn--primary {
+  margin-bottom: 15px;
 }
 
 .overlay {

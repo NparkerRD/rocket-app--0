@@ -118,9 +118,44 @@
             <input type="number" name="cases" class="input" id="input--cases" />
           </div>
         </div>
-        <div class="calc__total"></div>
-        <div class="calc__results"></div>
-        <div class="calc__buttons"></div>
+        <div class="calc__total">
+          <hr />
+          <div class="calc__result-group">
+            <h1>Total Cost:</h1>
+            <div class="calc__result calc__result--total"></div>
+          </div>
+          <hr />
+        </div>
+        <div class="calc__results">
+          <div class="calc__result-group">
+            <p class="calc__result-label">Hotel (per person)</p>
+            <div class="calc__result" id="calc__result--hotel"></div>
+          </div>
+          <div class="calc__result-group">
+            <p class="calc__result-label">Food (per person)</p>
+            <div class="calc__result" id="calc__result--food"></div>
+          </div>
+          <div class="calc__result-group">
+            <p class="calc__result-label">Travel Time (per person)</p>
+            <div class="calc__result" id="calc__result--travel"></div>
+          </div>
+          <div class="calc__result-group">
+            <p class="calc__result-label">Tickets (per person)</p>
+            <div class="calc__result" id="calc__result--tickets"></div>
+          </div>
+          <div class="calc__result-group">
+            <p class="calc__result-label">Shipping (per case)</p>
+            <div class="calc__result" id="calc__result--shipping"></div>
+          </div>
+          <div class="calc__result-group">
+            <p class="calc__result-label">Car Rental (per day)</p>
+            <div class="calc__result" id="calc__result--hotel"></div>
+          </div>
+        </div>
+        <div class="calc__buttons">
+          <button class="btn btn--primary btn--calculate">Calculate</button>
+          <button class="btn btn--neutral btn--clear">Clear</button>
+        </div>
       </div>
     </main>
 

@@ -6,6 +6,7 @@
   min-height: 625px;
   padding-bottom: 40px;
   box-shadow: 5px 5px 15px $cc-shadow;
+  border-radius: $br-soft;
 
   &__tabs {
     display: flex;
@@ -17,10 +18,14 @@
   &__tab {
     padding: 15px 25px;
     cursor: pointer;
-    background: $cc-neutral;
+    background: #eee;
+
+    &:first-child {
+      border-radius: $br-soft 0 0 0;
+    }
 
     &--active {
-      background: $cc-primary;
+      background: #d9d9d9;
     }
   }
 
@@ -28,7 +33,7 @@
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 5px 0;
+    padding: 5px;
   }
 
   &__input-group {
@@ -45,6 +50,54 @@
       border: none;
       text-align: center;
       padding: 0 2px;
+    }
+  }
+
+  &__total {
+    @include flexCol;
+    margin-top: 12px;
+    margin-bottom: 15px;
+
+    hr {
+      width: 90%;
+      align-self: center;
+      justify-self: center;
+    }
+
+    .calc__result-group {
+      padding: 15px 20px;
+    }
+  }
+
+  &__results {
+    @include flexCol;
+  }
+
+  &__result-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px 20px;
+
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  &__result {
+    background: $cc-neutral;
+    min-width: 80px;
+    height: 25px;
+  }
+
+  &__buttons {
+    width: 50%;
+    align-self: center;
+    margin-top: auto;
+
+    .btn--primary {
+      margin-bottom: 15px;
     }
   }
 }
