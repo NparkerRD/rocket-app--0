@@ -1,5 +1,11 @@
 The purpose of this app is to help keep track of issues and service calls that Rocket Daddy performs for its clients.
 
+ULTIMATE GOAL: 
+Allow a Rocket Daddy member to log on and easily see a summary of what's going on. Example: 
+- What walkthroughs are coming up?
+- Do any clients have current/active issues that need to be resolved?
+- When and where are the next few projects? 
+
 App objectives:
     * Track client issues that are submitted for assistance (issues that can be resolved without performing a service visit)
     * Track client service calls performed by Rocket Daddy
