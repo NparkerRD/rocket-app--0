@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -280,6 +281,9 @@ input[type=number] {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
+.calc * {
+  font-family: "Inter", sans-serif;
+}
 .calc__tabs {
   display: flex;
   width: 100%;
@@ -291,12 +295,13 @@ input[type=number] {
   padding: 15px 25px;
   cursor: pointer;
   background: #eee;
+  background: #ddd3ee;
 }
 .calc__tab:first-child {
   border-radius: 10px 0 0 0;
 }
 .calc__tab--active {
-  background: #d9d9d9;
+  background: #9f81cf;
 }
 .calc__switch-container {
   width: 100%;
@@ -315,10 +320,13 @@ input[type=number] {
   margin: 0 auto;
   align-items: center;
 }
+.calc__input-group label {
+  margin-bottom: 5px;
+}
 .calc__input-group .input {
   width: 30px;
   height: 30px;
-  background: #cccccc;
+  background: #f9f8fc;
   outline: none;
   border: none;
   text-align: center;
@@ -353,7 +361,7 @@ input[type=number] {
   font-size: 25px;
 }
 .calc__result {
-  background: #cccccc;
+  background: #f9f8fc;
   min-width: 80px;
   height: 25px;
 }

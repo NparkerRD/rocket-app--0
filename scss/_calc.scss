@@ -8,6 +8,10 @@
   box-shadow: 5px 5px 15px $cc-shadow;
   border-radius: $br-md;
 
+  * {
+    font-family: $ff-calc;
+  }
+
   &__tabs {
     display: flex;
     width: 100%;
@@ -19,13 +23,14 @@
     padding: 15px 25px;
     cursor: pointer;
     background: #eee;
+    background: $cc-lt;
 
     &:first-child {
       border-radius: $br-md 0 0 0;
     }
 
     &--active {
-      background: #d9d9d9;
+      background: $cc-primary-66;
     }
   }
 
@@ -47,10 +52,14 @@
     margin: 0 auto;
     align-items: center;
 
+    label {
+      margin-bottom: 5px;
+    }
+
     .input {
       width: 30px;
       height: 30px;
-      background: $cc-neutral;
+      background: $cc-xlt;
       outline: none;
       border: none;
       text-align: center;
@@ -91,7 +100,7 @@
   }
 
   &__result {
-    background: $cc-neutral;
+    background: $cc-xlt;
     min-width: 80px;
     height: 25px;
   }
