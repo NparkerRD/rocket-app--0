@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Installation Calculator | Rocket Daddy Security</title>
+    <title>Travel Calculator | Rocket Daddy Security</title>
     <link rel="stylesheet" href="/dist/css/main.css" />
   </head>
   <body class="flex">
@@ -79,7 +79,101 @@
       </div>
     </nav>
 
-    <main class="main"></main>
+    <main class="main">
+      <div class="calc" id="calc--installation">
+        <!-- Calculator toggle switch -->
+        <div class="toggle toggle--flying">
+          <p class="toggle-label">Calculate flying cost</p>
+          <div class="toggle_wrapper">
+            <div class="toggle_inner toggle-switch"></div>
+          </div>
+        </div>
+
+        <!-- Calculator inputs -->
+        <div class="calc__inputs">
+          <div class="calc__input-group">
+            <label for="input--doors">Doors</label>
+            <input type="number" name="doors" class="input" id="input--doors" />
+          </div>
+          <div class="calc__input-group">
+            <label for="input--days">Days</label>
+            <input type="number" name="days" class="input" id="input--days" />
+          </div>
+          <div class="calc__input-group">
+            <label for="input--nights">Nights</label>
+            <input
+              type="number"
+              name="nights"
+              class="input"
+              id="input--nights"
+            />
+          </div>
+          <div class="calc__input-group">
+            <label for="input--people">People</label>
+            <input
+              type="number"
+              name="people"
+              class="input"
+              id="input--people"
+            />
+          </div>
+          <div class="calc__input-group">
+            <label for="input--hours">Hours</label>
+            <input type="number" name="hours" class="input" id="input--hours" />
+          </div>
+          <div class="calc__input-group">
+            <label for="input--distance">Distance</label>
+            <input
+              type="number"
+              name="distance"
+              class="input"
+              id="input--distance"
+            />
+          </div>
+        </div>
+        <!-- Calculator total -->
+        <div class="calc__total">
+          <hr />
+          <div class="calc__result-group">
+            <h1>Total Cost:</h1>
+            <div class="calc__result calc__result--total"></div>
+          </div>
+          <hr />
+        </div>
+        <!-- Calculator results -->
+        <div class="calc__results">
+          <div class="calc__result-group">
+            <p class="calc__result-label">Door installation</p>
+            <div class="calc__result" id="calc__result--doors"></div>
+          </div>
+          <div class="calc__result-group">
+            <p class="calc__result-label">Wiring</p>
+            <div class="calc__result" id="calc__result--wiring"></div>
+          </div>
+          <div class="calc__result-group">
+            <p class="calc__result-label">Hotel</p>
+            <div class="calc__result" id="calc__result--hotel"></div>
+          </div>
+          <div class="calc__result-group">
+            <p class="calc__result-label">Travel Time</p>
+            <div class="calc__result" id="calc__result--travelTime"></div>
+          </div>
+          <div class="calc__result-group">
+            <p class="calc__result-label">Per Diem</p>
+            <div class="calc__result" id="calc__result--per-diem"></div>
+          </div>
+          <div class="calc__result-group">
+            <p class="calc__result-label">Mileage</p>
+            <div class="calc__result" id="calc__result--mileage"></div>
+          </div>
+        </div>
+        <!-- Calculator buttons -->
+        <div class="calc__buttons">
+          <button class="btn btn--primary btn--calculate">Calculate</button>
+          <button class="btn btn--neutral btn--clear">Clear</button>
+        </div>
+      </div>
+    </main>
 
     <!-- DEVELOPMENT ONLY - Open navigation menu -->
     <script>
