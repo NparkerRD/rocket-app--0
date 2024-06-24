@@ -13,13 +13,13 @@
   }
 
   &--primary {
-    background: $cc-primary;
-    color: $cc-lt;
+    background: $cc2-primary;
+    color: $cc2-lt;
   }
 
   &--cancel {
     background: $cc-neutral;
-    color: $cc-xdk;
+    color: $cc2-xdk;
   }
 }
 
@@ -39,7 +39,7 @@
     top: 0.5rem;
     width: 28px;
     height: 5px;
-    background: $cc-xdk;
+    background: $cc2-xdk;
     border-radius: 150px;
 
     &::before {
@@ -49,7 +49,7 @@
       top: -8px;
       width: 28px;
       height: 5px;
-      background-color: $cc-xdk;
+      background-color: $cc2-xdk;
       border-radius: 150px;
     }
 
@@ -60,7 +60,7 @@
       top: 8px;
       width: 20px;
       height: 5px;
-      background-color: $cc-xdk;
+      background-color: $cc2-xdk;
       border-radius: 150px;
     }
 
