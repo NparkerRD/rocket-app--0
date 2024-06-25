@@ -81,49 +81,52 @@
 
     <main class="main clients">
       <div class="row">
-        <div class="clients__buttons">
-          <button class="btn btn--primary" id="btn--add-item">Add Item</button>
-          <button class="btn btn--primary" id="btn--add-door">Add Door</button>
-        </div>
+        <div class="action-buttons"></div>
       </div>
 
       <div class="row">
-        <div class="summary">
-          <h1 class="summary__title">Lake Nona</h1>
-          <p class="summary__address">
-            6900 Tavistock Lakes Blvd <br />
-            Orlando, FL 33333
-          </p>
-          <div class="summary__breakdown">
-            <div class="breakdown-group">
-              <!-- Adjust "breakdown-group" to just be a flex-column group -->
-              <h2>Doors</h2>
-              <p>5</p>
-            </div>
-            <div class="breakdown-group">
-              <h2>Doors</h2>
-              <p>5</p>
-            </div>
-            <div class="breakdown-group">
-              <h2>Doors</h2>
-              <p>5</p>
-            </div>
-            <div class="breakdown-group">
-              <h2>Doors</h2>
-              <p>5</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="overview">
-          <div class="overview__tabs">
-            <div class="overview__tab">Doors</div>
-            <div class="overview__tab">Cameras, alarms, intercoms</div>
-            <hr />
-          </div>
-        </div>
+        <table class="table" id="table--clients">
+          <thead class="table__header">
+            <tr class="table__row">
+              <th scope="col" class="table__cell table__cell--header">
+                Client
+              </th>
+              <th scope="col" class="table__cell table__cell--header">
+                Active Sites
+              </th>
+              <th scope="col" class="table__cell table__cell--header">
+                Client Owner
+              </th>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <tr class="table__row">
+              <td class="table__cell">Innovacare Health</td>
+              <td class="table__cell">15</td>
+              <td class="table__cell">Presley Marder</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell">H&R Block</td>
+              <td class="table__cell">15</td>
+              <td class="table__cell">Nicole Parker</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell">Seminole Feed</td>
+              <td class="table__cell">15</td>
+              <td class="table__cell">Nicole Parker</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell">MegaCorp Logistics</td>
+              <td class="table__cell">15</td>
+              <td class="table__cell">Presley Marder</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell">JWB Propery Management</td>
+              <td class="table__cell">15</td>
+              <td class="table__cell">Presley Marder</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </main>
 

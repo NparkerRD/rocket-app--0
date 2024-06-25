@@ -1,9 +1,22 @@
+// 768px
 @include media-md {
   .nav {
     width: clamp(325px, 25%, 350px);
   }
+
+  .table {
+    &__cell {
+      font-size: 1.2rem;
+      padding: 10px 5px;
+
+      &--header {
+        font-size: 1.3rem;
+      }
+    }
+  }
 }
 
+// 1024px
 @include media-lg {
   .row {
     &--flex {
@@ -32,6 +45,7 @@
   }
 }
 
+// 1400px
 @include media-xl {
   .nav-btn {
     visibility: hidden;

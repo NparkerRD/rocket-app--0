@@ -1,39 +1,30 @@
 .table {
+  * {
+    font-family: $ff-secondary;
+  }
+
+  width: 100%;
+  background: #fff;
   border-collapse: collapse;
-  margin-bottom: 55px;
+  border-radius: 2px;
 
-  caption {
-    background: $cc-xlt;
-    padding: 0.5rem;
-    border-radius: 7px 7px 0 0;
-    font-weight: $fw-bold;
-    font-size: 24px;
+  &__header {
+    text-align: left;
   }
 
-  th {
-    background-color: $cc-primary-66;
+  &__row {
+    margin-bottom: 2px;
   }
 
-  th,
-  td {
-    padding: 0.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    text-align: center;
-  }
+  &__cell {
+    border-bottom: 2px solid $cc-lt;
+    padding: 2px 5px;
+    font-weight: $fw-lt;
+    font-size: 0.95rem;
 
-  tbody > tr:nth-of-type(odd) {
-    background-color: $cc-xlt;
-  }
-
-  tbody > tr:nth-of-type(even) {
-    background-color: $cc-lt;
-  }
-
-  &--full {
-    width: clamp(345px, 100%, 900px);
-  }
-
-  &--md {
-    width: clamp(345px, 100%, 800px);
+    &--header {
+      font-size: 1rem;
+      font-weight: $fw-reg;
+    }
   }
 }
