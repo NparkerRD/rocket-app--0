@@ -5,6 +5,9 @@
   }
 
   .table {
+    &__caption {
+      font-size: 1.5rem;
+    }
     &__cell {
       font-size: 1.2rem;
       padding: 10px 5px;
@@ -18,29 +21,29 @@
 
 // 1024px
 @include media-lg {
-  .row {
-    &--flex {
-      display: flex;
-      justify-content: space-evenly;
-    }
-  }
-
   .table {
     &--full {
-      width: clamp(345px, 100%, 1050px);
+      width: clamp(345px, 100%, 1100px);
     }
 
     &--md {
-      width: clamp(345px, 100%, 450px);
+      width: clamp(345px, 100%, 475px);
     }
   }
 
   .row {
     display: flex;
     justify-content: center;
+    border: 1px dashed blue;
 
     &--flex {
       justify-content: space-evenly;
+      .table--md {
+        &:first-child {
+          // margin-right: auto;
+          background: yellow;
+        }
+      }
     }
   }
 }

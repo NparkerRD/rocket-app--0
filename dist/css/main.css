@@ -171,9 +171,15 @@ input[type=number] {
   background: #fff;
   border-collapse: collapse;
   border-radius: 2px;
+  margin-bottom: 25px;
 }
 .table * {
   font-family: "Roboto Condensed", sans-serif;
+}
+.table__caption {
+  background: #fff;
+  padding: 10px;
+  font-size: 20px;
 }
 .table__header {
   text-align: left;
@@ -402,6 +408,9 @@ main {
   .nav {
     width: clamp(325px, 25%, 350px);
   }
+  .table__caption {
+    font-size: 1.5rem;
+  }
   .table__cell {
     font-size: 1.2rem;
     padding: 10px 5px;
@@ -411,22 +420,22 @@ main {
   }
 }
 @media screen and (min-width: 1024px) {
-  .row--flex {
-    display: flex;
-    justify-content: space-evenly;
-  }
   .table--full {
-    width: clamp(345px, 100%, 1050px);
+    width: clamp(345px, 100%, 1100px);
   }
   .table--md {
-    width: clamp(345px, 100%, 450px);
+    width: clamp(345px, 100%, 475px);
   }
   .row {
     display: flex;
     justify-content: center;
+    border: 1px dashed blue;
   }
   .row--flex {
     justify-content: space-evenly;
+  }
+  .row--flex .table--md:first-child {
+    background: yellow;
   }
 }
 @media screen and (min-width: 1400px) {
